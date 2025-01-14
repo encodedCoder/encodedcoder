@@ -1,0 +1,64 @@
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fafafa;
+  --foreground: #18181b;
+}
+
+.dark {
+  --background: #18181b;
+  --foreground: #fafafa;
+}
+
+@layer base {
+  body {
+    @apply bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply tracking-tight;
+  }
+}
+
+@layer components {
+  .project-card {
+    @apply p-6 bg-white dark:bg-zinc-800 rounded-lg shadow-sm 
+           transition-all duration-300 hover:shadow-md;
+  }
+
+  .stats-card {
+    @apply p-6 bg-white dark:bg-zinc-700 rounded-lg 
+           transition-all duration-300 hover:scale-105;
+  }
+
+  .nav-link {
+    @apply text-zinc-600 hover:text-zinc-900 
+           dark:text-zinc-400 dark:hover:text-zinc-50 
+           transition-colors duration-200;
+  }
+
+  .section-container {
+    @apply container mx-auto px-4 py-16;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    );
+  }
+
+  .header {
+    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-white shadow-md;
+  }
+
+  .footer {
+    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-white shadow-inner mt-8;
+  }
+}
