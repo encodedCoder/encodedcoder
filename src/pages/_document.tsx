@@ -17,6 +17,10 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
             rel="stylesheet"
           />
+          <link
+            rel="icon"
+            href="https://lh3.googleusercontent.com/a/ACg8ocJ1mp1jAEkN6ayGk2969OFuEO2zInuQyBiG-BFvfkxwe5G15KMu=s360-c-no"
+          />
         </Head>
         <body>
           <Main />

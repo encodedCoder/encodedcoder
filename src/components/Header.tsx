@@ -1,5 +1,6 @@
 // /components/Header.tsx
 import Link from "next/link";
+import config from "../config";
 
 const Header = () => {
   return (
@@ -20,9 +21,11 @@ const Header = () => {
           <Link href="/projects" className="nav-link">
             Projects
           </Link>
-          <Link href="/blog" className="nav-link">
-            Blog
-          </Link>
+          {config.showBlog && (
+            <Link href="/blog" className="nav-link">
+              Blog
+            </Link>
+          )}
           <Link href="/contact" className="nav-link">
             Contact
           </Link>
