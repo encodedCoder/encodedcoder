@@ -1,6 +1,5 @@
 // /components/Header.tsx
 import Link from "next/link";
-import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   return (
@@ -27,7 +26,6 @@ const Header = () => {
           <Link href="/contact" className="nav-link">
             Contact
           </Link>
-          <ThemeToggle />
         </div>
       </nav>
     </header>
