@@ -8,7 +8,7 @@ const Portfolio = () => {
     {
       title: "Unity Game Project",
       description: "3D platformer built with Unity and C#",
-      link: "#",
+      link: "https://encodedcoder.itch.io/",
       type: "game",
     },
     {

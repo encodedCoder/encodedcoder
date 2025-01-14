@@ -1,0 +1,54 @@
+{
+  "webDevelopment": [
+    {
+      "title": "Link Shortener",
+      "description": "A link shortener application.",
+      "link": "https://clipp.work",
+      "image": "/images/link-shortener.png"
+    },
+    {
+      "title": "Sorting Algorithm Visualizer",
+      "description": "A tool to visualize sorting algorithms.",
+      "link": "https://vizsoft-sav.vercel.app/",
+      "image": "/images/sorting-algorithm-visualizer.png"
+    },
+    {
+      "title": "IIT Connect (WIP)",
+      "description": "A work-in-progress project for IIT connections.",
+      "link": "https://iitconnect.vercel.app/",
+      "image": "/images/iit-connect.png"
+    },
+    {
+      "title": "Calculator App",
+      "description": "A simple calculator application.",
+      "link": "https://calculator-suresh.vercel.app/",
+      "image": "/images/calculator-app.png"
+    },
+    {
+      "title": "Todo List",
+      "description": "A todo list application.",
+      "link": "https://todo-suresh.vercel.app/",
+      "image": "/images/todo-list.png"
+    }
+  ],
+  "unityGameDevelopment": [
+    {
+      "title": "Galaxy Shooter",
+      "description": "A space shooter game.",
+      "link": "https://encodedcoder.itch.io/galaxy-shooter",
+      "image": "/images/galaxy-shooter.png"
+    },
+    {
+      "title": "Buck's Quest",
+      "description": "An adventure game.",
+      "link": "https://encodedcoder.itch.io/bucks-quest",
+      "image": "/images/bucks-quest.png"
+    },
+    {
+      "title": "Mr. Mini",
+      "description": "A mini-game collection.",
+      "link": "https://encodedcoder.itch.io/mr-mini",
+      "image": "/images/mr-mini.png"
+    }
+  ]
+}

@@ -15,6 +15,9 @@ const Header = () => {
           <Link href="/about" className="nav-link">
             About
           </Link>
+          <Link href="/portfolio" className="nav-link">
+            Portfolio
+          </Link>
           <Link href="/projects" className="nav-link">
             Projects
           </Link>
@@ -23,9 +26,6 @@ const Header = () => {
           </Link>
           <Link href="/contact" className="nav-link">
             Contact
-          </Link>
-          <Link href="/portfolio" className="nav-link">
-            Portfolio
           </Link>
           <ThemeToggle />
         </div>
