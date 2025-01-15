@@ -17,18 +17,7 @@ const Home = () => {
       <Header />
       <main className="flex items-center justify-center min-h-screen bg-gray-100">
         <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl">
-          {/* <h1 className="text-4xl font-bold mb-6 text-center text-gray-800">
-            Welcome to My Portfolio
-          </h1> */}
           <EncodedCoder />
-          <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-            Showcasing my projects, skills, and more.
-          </p>
-          <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-            Hi, I&apos;m Suresh, a passionate developer with a love for creating
-            innovative solutions. With a strong background in web development, I
-            enjoy working on both front-end and back-end technologies.
-          </p>
           <div className="flex justify-center mb-6">
             <Image
               src="/images/suresh.png"
@@ -38,6 +27,14 @@ const Home = () => {
               height={128}
             />
           </div>
+          <p className="text-lg mb-6 text-gray-700 leading-relaxed">
+            Showcasing my projects, skills, and more.
+          </p>
+          <p className="text-lg mb-6 text-gray-700 leading-relaxed">
+            Hi, I&apos;m Suresh, a passionate developer with a love for creating
+            innovative solutions. With a strong background in web development, I
+            enjoy working on both front-end and back-end technologies.
+          </p>
           <div className="flex justify-center mt-6">
             <DotFlashing />
           </div>
