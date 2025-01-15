@@ -40,13 +40,13 @@
     },
     {
       "title": "Buck's Quest",
-      "description": "An adventure game.",
+      "description": "A puzzle game.",
       "link": "https://encodedcoder.itch.io/bucks-quest",
       "image": "/images/bucks-quest.png"
     },
     {
       "title": "Mr. Mini",
-      "description": "A mini-game collection.",
+      "description": "An endless runner game.",
       "link": "https://encodedcoder.itch.io/mr-mini",
       "image": "/images/mr-mini.png"
     }

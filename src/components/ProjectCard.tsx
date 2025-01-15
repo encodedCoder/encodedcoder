@@ -4,18 +4,16 @@ import Image from "next/image";
 interface ProjectCardProps {
   title: string;
   description: string;
-  link: string;
   image: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
-  link,
   image,
 }) => {
   return (
-    <div className="border rounded-lg overflow-hidden shadow-lg">
+    <div className="border rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
       <Image
         src={image}
         alt={title}
@@ -27,9 +25,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="p-4">
         <h3 className="text-xl font-bold mb-2">{title}</h3>
         <p className="text-gray-700 mb-4">{description}</p>
-        <a href={link} className="text-blue-500 hover:underline">
-          View Project
-        </a>
       </div>
     </div>
   );

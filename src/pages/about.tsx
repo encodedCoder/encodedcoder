@@ -12,7 +12,9 @@ const About = () => {
       <Header />
       <main className="flex items-center justify-center min-h-screen bg-gray-100">
         <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl">
-          <h1 className="text-4xl font-bold mb-6 text-center">About Me</h1>
+          <h1 className="text-4xl font-bold mb-6 text-center text-gray-800">
+            About Me
+          </h1>
           <p className="text-lg mb-6 text-gray-700 leading-relaxed">
             I am a web developer with experience in game development, writing
             Python scripts, and solving LeetCode problems. I am passionate about

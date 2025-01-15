@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Unity Game Project",
+    "description": "3D platformer built with Unity and C#",
+    "link": "https://encodedcoder.itch.io/",
+    "type": "game"
+  },
+  {
+    "title": "Python Analytics Tool",
+    "description": "Data analysis script for processing large datasets",
+    "link": "#",
+    "type": "script"
+  }
+]
