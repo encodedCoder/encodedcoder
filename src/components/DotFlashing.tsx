@@ -1,8 +1,7 @@
 import React from "react";
-import "../styles/styles.css"; // Import the CSS file
-
+import styles from "./DotFlashing.module.css";
 const DotFlashing = () => {
-  return <div className="dot-flashing"></div>;
+  return <div className={styles.dotFlashing}></div>;
 };
 
 export default DotFlashing;

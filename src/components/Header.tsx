@@ -12,6 +12,9 @@ const Header = () => {
           </Link>
         </div>
         <div className="flex space-x-4 items-center">
+          <Link href="/" className="nav-link">
+            Home
+          </Link>
           <Link href="/portfolio" className="nav-link">
             Portfolio
           </Link>
