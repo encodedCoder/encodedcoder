@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import AnimatedCoder from "../components/AnimatedCoder";
 
 const About = () => {
   return (
@@ -15,6 +16,8 @@ const About = () => {
           <h1 className="text-4xl font-bold mb-6 text-center text-gray-800">
             About Me
           </h1>
+          {/* <h1>I&apos;m Suresh</h1> */}
+          <AnimatedCoder />
           <p className="text-lg mb-6 text-gray-700 leading-relaxed">
             I am a web developer with experience in game development, writing
             Python scripts, and solving LeetCode problems. I am passionate about
