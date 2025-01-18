@@ -27,14 +27,17 @@ const Home = () => {
               height={128}
             />
           </div>
-          <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-            Showcasing my projects, skills, and more.
-          </p>
-          <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-            Hi, I&apos;m Suresh, a passionate developer with a love for creating
-            innovative solutions. With a strong background in web development, I
-            enjoy working on both front-end and back-end technologies.
-          </p>
+          <div style={{ textAlign: "center" }}>
+            <p className="text-lg mb-6 text-gray-700 leading-relaxed">
+              Showcasing my projects, skills, and more.
+            </p>
+            <p className="text-lg mb-6 text-gray-700 leading-relaxed">
+              Hi, I&apos;m Suresh, a passionate developer with a love for
+              creating innovative solutions. With a strong background in web
+              development, I enjoy working on both front-end and back-end
+              technologies.
+            </p>
+          </div>
           <div className="flex justify-center mt-6">
             <DotFlashing />
           </div>
