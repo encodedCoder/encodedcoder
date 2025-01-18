@@ -1,5 +1,5 @@
-// filepath: /C:/Users/theCode/OneDrive/Desktop/portfolio-website/src/pages/_document.js
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 class MyDocument extends Document {
   render() {
@@ -56,7 +56,7 @@ class MyDocument extends Document {
             content="https://encodedcoder.com/images/suresh.png"
           />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="coderEncoded · Suresh" />
+          <meta name="twitter:title" content="encodedCoder · Suresh" />
           <meta
             name="twitter:description"
             content="Hi, I'm Suresh, a passionate developer with a love for creating innovative solutions. With a strong background in web development, I enjoy working on both front-end and back-end technologies."
@@ -65,6 +65,18 @@ class MyDocument extends Document {
             name="twitter:image"
             content="https://encodedcoder.com/images/suresh.png"
           />
+          <Script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-8FXS9XD10B"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-8FXS9XD10B');
+            `}
+          </Script>
         </Head>
         <body>
           <Main />
