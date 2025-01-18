@@ -55,8 +55,8 @@ const About = () => {
           </p>
           <h2 className="text-2xl font-semibold mb-4 text-gray-800">Contact</h2>
           <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-            Feel free to reach out to me via email at encodedcoder@example.com
-            or connect with me on LinkedIn.
+            Feel free to reach out to me via email at suresh@clipp.work or
+            connect with me on LinkedIn.
           </p>
         </div>
       </main>
