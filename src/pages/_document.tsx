@@ -77,6 +77,30 @@ class MyDocument extends Document {
               gtag('config', 'G-8FXS9XD10B');
             `}
           </Script>
+          <Script
+            id="google-seo"
+            type="application/ld+json"
+            strategy="afterInteractive"
+          >
+            {`
+              {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Suresh",
+                "url": "http://encodedcoder.com",
+                "image": "https://encodedcoder.com/images/suresh.png",
+                "sameAs": [
+                  "https://www.linkedin.com/in/encodedCoder",
+                  "https://github.com/encodedCoder"
+                ],
+                "jobTitle": "Web Developer",
+                "worksFor": {
+                  "@type": "Freelancer",
+                  "name": "encodedCoder"
+                }
+              }
+            `}
+          </Script>
         </Head>
         <body>
           <Main />
