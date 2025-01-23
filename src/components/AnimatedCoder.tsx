@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
+import styles from "./AnimatedCoder.module.css";
 
 const phrases = [
-  " a web developer",
-  " experienced in game development",
-  " a Python script writer",
-  " a LeetCode problem solver",
-  " passionate about technology",
-  " a lifelong learner",
+  " a web🛜 developer",
+  " experienced in game🎮 development",
+  " a Python🐍 script writer",
+  " a LeetCode🧑‍💻 problem solver",
+  " passionate about technology⚙️",
+  " a lifelong learner📚",
 ];
 
 const AnimatedCoder = () => {
@@ -31,7 +32,7 @@ const AnimatedCoder = () => {
 
     const timeout = setTimeout(() => {
       setSubIndex((prev) => prev + (reverse ? -1 : 1));
-    }, Math.max(reverse ? 75 : subIndex === phrases[index].length ? 1000 : 150, Math.floor(Math.random() * 350)));
+    }, Math.max(reverse ? 75 : subIndex === phrases[index].length ? 300 : 50, Math.floor(Math.random() * 150)));
 
     return () => clearTimeout(timeout);
   }, [subIndex, index, reverse]);
@@ -44,7 +45,7 @@ const AnimatedCoder = () => {
   }, [blink]);
 
   return (
-    <h1 className="animated-coder" style={{ textAlign: "center" }}>
+    <h1 className={styles.AnimatedCoder} style={{ textAlign: "center" }}>
       {"I'm"}
       {phrases[index].substring(0, subIndex)}
       {blink ? "|" : " "}

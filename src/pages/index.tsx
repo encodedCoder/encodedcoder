@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import DotFlashing from "../components/DotFlashing"; // Import the DotFlashing component
 import EncodedCoder from "../components/EncodedCoder";
+import SocialIcons from "@/components/SocialIcons";
 const Home = () => {
   return (
     <div>
@@ -34,6 +35,9 @@ const Home = () => {
             <DotFlashing />
           </div>
           <div style={{ textAlign: "center" }}>
+            <div className="mt-6 flex justify-center gap-4 color-gray-700">
+              <SocialIcons />
+            </div>
             <p className="text-lg mb-6 text-gray-700 leading-relaxed">
               Showcasing my projects, skills, and more.
             </p>

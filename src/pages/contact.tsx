@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div>
       <Head>
-        <title>Contact - EncodedCoder</title>
+        <title>Contact - Suresh</title>
         <meta name="description" content="Get in touch with EncodedCoder." />
       </Head>
       <Header />

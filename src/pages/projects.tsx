@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <div>
       <Head>
-        <title>Projects - EncodedCoder</title>
+        <title>Projects - Suresh</title>
         <meta
           name="description"
           content="Explore the projects by EncodedCoder."

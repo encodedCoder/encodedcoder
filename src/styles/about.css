@@ -1,9 +1,0 @@
-.animated-coder {
-  font-family: monospace;
-  white-space: nowrap;
-  color: black;
-  overflow: hidden;
-  animation: blink-caret 0.1s step-end infinite;
-  align-items: center;
-  font-size: larger;
-}

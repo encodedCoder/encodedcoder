@@ -1,4 +1,10 @@
-import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaFacebook,
+  FaTwitter,
+} from "react-icons/fa";
 
 const SocialIcons = () => {
   return (
@@ -34,6 +40,14 @@ const SocialIcons = () => {
         rel="noopener noreferrer"
       >
         <FaFacebook size={24} />
+      </a>
+      <a
+        href="https://twitter.com/coderencoded"
+        className="nav-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaTwitter size={24} />
       </a>
       <a
         href="https://leetcode.com/encodedcoder"
