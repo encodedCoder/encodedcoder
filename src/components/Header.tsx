@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import config from "../config";
 
@@ -13,7 +14,14 @@ const Header = () => {
     <header className="header">
       <nav className="container mx-auto flex justify-between items-center p-4 content-width">
         <div>
-          <Link href="/" className="text-2xl font-bold">
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/favicon.ico"
+              alt="favicon"
+              width={32}
+              height={32}
+              className="w-8 h-8 mr-2"
+            />
             encodedCoder · Suresh
           </Link>
         </div>

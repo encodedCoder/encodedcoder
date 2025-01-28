@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import portfolioProjects from "../data/portfolioProjects.json";
 import styles from "../styles/portfolio.module.css"; // Import the CSS module
-import SocialIcons from "@/components/SocialIcons";
+// import SocialIcons from "@/components/SocialIcons";
 
 const Portfolio = () => {
   const [stats, setStats] = useState({
@@ -58,9 +58,6 @@ const Portfolio = () => {
           <p className="mt-4 text-xl">
             Building experiences with Next.js, Unity, and Python
           </p>
-          <div className="mt-6 flex justify-center gap-4">
-            <SocialIcons />
-          </div>
         </header>
 
         {/* Projects Grid */}

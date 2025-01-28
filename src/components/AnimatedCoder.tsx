@@ -45,9 +45,12 @@ const AnimatedCoder = () => {
   }, [blink]);
 
   return (
-    <h1 className={styles.AnimatedCoder} style={{ textAlign: "center" }}>
-      {"I'm"}
-      {phrases[index].substring(0, subIndex)}
+    <h1
+      className={`${styles.AnimatedCoder} text-black`}
+      style={{ textAlign: "center" }}
+    >
+      {"I'm "}
+      {phrases[index].substring(1, subIndex)}
       {blink ? "|" : " "}
     </h1>
   );

@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import DotFlashing from "../components/DotFlashing"; // Import the DotFlashing component
 import EncodedCoder from "../components/EncodedCoder";
-import SocialIcons from "@/components/SocialIcons";
+// import SocialIcons from "@/components/SocialIcons";
 const Home = () => {
   return (
     <div>
@@ -16,7 +16,7 @@ const Home = () => {
         />
       </Head>
       <Header />
-      <main className="flex items-center justify-center min-h-screen bg-gray-100">
+      <main className="flex items-center justify-center md:min-h-screen bg-gray-100">
         <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl">
           <EncodedCoder />
           <div className="flex justify-center mb-6">
@@ -35,17 +35,20 @@ const Home = () => {
             <DotFlashing />
           </div>
           <div style={{ textAlign: "center" }}>
-            <div className="mt-6 flex justify-center gap-4 color-gray-700">
+            {/* <div className="mt-6 flex justify-center gap-4 color-gray-700">
               <SocialIcons />
-            </div>
+            </div> */}
             <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-              Showcasing my projects, skills, and more.
+              😎 An Ambiert, 🦜 Selt Contained, 🎉 Computer Nerd...
             </p>
             <p className="text-lg mb-6 text-gray-700 leading-relaxed">
               Hi, I&apos;m Suresh, a passionate developer with a love for
               creating innovative solutions. With a strong background in web
               development, I enjoy working on both front-end and back-end
               technologies.
+            </p>
+            <p className="text-lg mb-6 text-gray-700 leading-relaxed">
+              Showcasing my projects, skills, and more.
             </p>
           </div>
         </div>
