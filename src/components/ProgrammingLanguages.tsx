@@ -7,13 +7,13 @@ const ProgrammingLanguages = () => {
   return (
     <div className="mt-8">
       <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-        Programming Languages
+        Programming Languages 💻
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {programmingLanguages.map((language) => (
           <div
             key={language.language}
-            className="flex flex-col p-4 bg-white text-black rounded-lg shadow-lg"
+            className="flex flex-col p-4 bg-white text-black rounded-lg shadow-md"
           >
             <Image
               src={language.image}

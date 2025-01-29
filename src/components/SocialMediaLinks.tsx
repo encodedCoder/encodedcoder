@@ -15,7 +15,7 @@ const SocialMediaLinks = () => {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center p-4 bg-white text-black rounded-lg shadow-lg hover:bg-gray-100 transition duration-300"
+            className="flex items-center p-4 bg-white text-black rounded-lg shadow-md hover:bg-gray-100 transition duration-300"
           >
             <Image
               src={link.logo}

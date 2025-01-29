@@ -1,0 +1,26 @@
+[
+  {
+    "technology": "Unity",
+    "proficiency": "⭐⭐⭐⭐",
+    "concepts": ["2D/3D Game Development", "Physics", "Scripting"],
+    "image": "/images/gamedev/unity.png"
+  },
+  {
+    "technology": "C#",
+    "proficiency": "⭐⭐⭐⭐",
+    "concepts": ["OOP", "Game Logic", "Scripting"],
+    "image": "/images/gamedev/csharp.png"
+  },
+  {
+    "technology": "Blender",
+    "proficiency": "⭐⭐⭐⭐",
+    "concepts": ["3D Modeling", "Texturing", "Animation"],
+    "image": "/images/gamedev/blender.png"
+  },
+  {
+    "technology": "Photoshop",
+    "proficiency": "⭐⭐⭐⭐",
+    "concepts": ["Image Editing", "Texture Creation", "Graphic Design"],
+    "image": "/images/gamedev/photoshop.png"
+  }
+]
