@@ -1,0 +1,46 @@
+[
+  {
+    "language": "C-Programming",
+    "proficiency": "⭐⭐⭐⭐",
+    "concepts": [
+      "Pointers",
+      "Memory Management",
+      "Function Pointers",
+      "Struct"
+    ],
+    "githubRepo": "https://github.com/encodedCoder/dsa_with_c",
+    "image": "/images/programming-langs/c.png"
+  },
+  {
+    "language": "C++",
+    "proficiency": "⭐⭐⭐⭐",
+    "concepts": [
+      "OOP",
+      "STL",
+      "Memory Management",
+      "Data Structures",
+      "Algorithms"
+    ],
+    "githubRepo": "https://github.com/encodedCoder/dsa_with_cpp",
+    "image": "/images/programming-langs/cpp.png"
+  },
+  {
+    "language": "Python",
+    "proficiency": "⭐⭐⭐⭐⭐",
+    "concepts": [
+      "Data Structures",
+      "Web Development",
+      "Machine Learning",
+      "Scripting"
+    ],
+    "githubRepo": "https://github.com/encodedCoder/dsa_with_python",
+    "image": "/images/programming-langs/python.png"
+  },
+  {
+    "language": "JavaScript",
+    "proficiency": "⭐⭐⭐⭐",
+    "concepts": ["Web Development", "ES6+", "React", "Node.js"],
+    "githubRepo": "https://github.com/encodedCoder/javascript_mini_projects",
+    "image": "/images/programming-langs/javascript.png"
+  }
+]

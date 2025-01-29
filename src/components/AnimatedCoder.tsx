@@ -2,12 +2,10 @@ import React, { useState, useEffect } from "react";
 import styles from "./AnimatedCoder.module.css";
 
 const phrases = [
-  " a web🛜 developer",
-  " experienced in game🎮 development",
-  " a Python🐍 script writer",
-  " a LeetCode🧑‍💻 problem solver",
-  " passionate about technology⚙️",
-  " a lifelong learner📚",
+  "a Web Developer",
+  "a Game Developer",
+  "a Python Programmer",
+  "a Problem Solver",
 ];
 
 const AnimatedCoder = () => {
@@ -17,16 +15,14 @@ const AnimatedCoder = () => {
   const [reverse, setReverse] = useState(false);
 
   useEffect(() => {
-    if (index === phrases.length) {
-      setIndex(0);
-    }
     if (subIndex === phrases[index].length + 1 && !reverse) {
       setReverse(true);
       return;
     }
+
     if (subIndex === 0 && reverse) {
       setReverse(false);
-      setIndex((prev) => prev + 1);
+      setIndex((prev) => (prev + 1) % phrases.length);
       return;
     }
 
@@ -50,7 +46,7 @@ const AnimatedCoder = () => {
       style={{ textAlign: "center" }}
     >
       {"I'm "}
-      {phrases[index].substring(1, subIndex)}
+      {phrases[index].substring(0, subIndex)}
       {blink ? "|" : " "}
     </h1>
   );

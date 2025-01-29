@@ -39,7 +39,7 @@ const Home = () => {
               <SocialIcons />
             </div> */}
             <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-              😎 An Ambiert, 🦜 Selt Contained, 🎉 Computer Nerd...
+              😎 An Ambivert, 🦜 Self Contained, 🎉 Computer Nerd...
             </p>
             <p className="text-lg mb-6 text-gray-700 leading-relaxed">
               Hi, I&apos;m Suresh, a passionate developer with a love for
