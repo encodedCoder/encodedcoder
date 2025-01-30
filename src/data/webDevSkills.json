@@ -3,54 +3,54 @@
     "technology": "HTML",
     "proficiency": "⭐⭐⭐⭐⭐",
     "concepts": ["Semantic HTML", "Forms", "Accessibility"],
-    "image": "/images/webdev/html.png"
+    "image": "/images/webskills/html.png"
   },
   {
     "technology": "CSS",
     "proficiency": "⭐⭐⭐⭐⭐",
     "concepts": ["Flexbox", "Grid", "Responsive Design"],
-    "image": "/images/webdev/css.png"
+    "image": "/images/webskills/css.png"
   },
   {
     "technology": "TailwindCSS",
     "proficiency": "⭐⭐⭐⭐⭐",
     "concepts": ["Utility-First", "Responsive Design", "Customization"],
-    "image": "/images/webdev/tailwindcss.png"
+    "image": "/images/webskills/tailwindcss.png"
   },
   {
     "technology": "Bootstrap",
     "proficiency": "⭐⭐⭐⭐",
     "concepts": ["Grid System", "Components", "Responsive Design"],
-    "image": "/images/webdev/bootstrap.png"
+    "image": "/images/webskills/bootstrap.png"
   },
   {
     "technology": "TypeScript",
     "proficiency": "⭐⭐⭐⭐",
     "concepts": ["Type Safety", "Generics", "Interfaces"],
-    "image": "/images/webdev/typescript.png"
+    "image": "/images/webskills/typescript.png"
   },
   {
     "technology": "Node.js",
     "proficiency": "⭐⭐⭐⭐",
     "concepts": ["Express", "REST APIs", "Middleware"],
-    "image": "/images/webdev/nodejs.png"
+    "image": "/images/webskills/nodejs.png"
   },
   {
     "technology": "React",
     "proficiency": "⭐⭐⭐⭐⭐",
     "concepts": ["Hooks", "State Management", "Component Lifecycle"],
-    "image": "/images/webdev/react.png"
+    "image": "/images/webskills/react.png"
   },
   {
     "technology": "Next.js",
     "proficiency": "⭐⭐⭐⭐",
     "concepts": ["SSR", "SSG", "API Routes"],
-    "image": "/images/webdev/nextjs.png"
+    "image": "/images/webskills/nextjs.png"
   },
   {
     "technology": "MongoDB",
     "proficiency": "⭐⭐⭐⭐",
     "concepts": ["CRUD Operations", "Aggregation", "Indexing"],
-    "image": "/images/webdev/mongodb.png"
+    "image": "/images/webskills/mongodb.png"
   }
 ]
