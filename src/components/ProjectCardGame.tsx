@@ -71,7 +71,7 @@ const ProjectCardGame: React.FC<ProjectCardGameProps> = ({
             className="bg-blue-600 text-white px-2 py-2 rounded-lg flex items-center"
           >
             <FaExternalLinkAlt className="mr-2" />
-            Play Game
+            Play
           </a>
         </div>
       </div>
