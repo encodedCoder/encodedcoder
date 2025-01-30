@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-interface ProjectCardProps {
+interface ProjectCardWebProps {
   title: string;
   description: string;
   image: string;
@@ -11,7 +11,7 @@ interface ProjectCardProps {
   liveLink: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({
+const ProjectCardWeb: React.FC<ProjectCardWebProps> = ({
   title,
   description,
   image,
@@ -68,4 +68,4 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   );
 };
 
-export default ProjectCard;
+export default ProjectCardWeb;

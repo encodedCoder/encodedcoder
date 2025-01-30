@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Galaxy Shooter",
+    "description": "A space shooter game where players control a spaceship to defeat enemies.",
+    "link": "https://encodedcoder.itch.io/galaxy-shooter",
+    "image": "/images/projects/gamedev/galaxy-shooter.png",
+    "technologies": ["Unity", "C#"],
+    "githubLink": "https://github.com/encodedcoder/galaxy-shooter-the-game",
+    "itchioLink": "https://encodedcoder.itch.io/galaxy-shooter",
+    "liveLink": "https://encodedcoder.github.io/galaxy-shooter-webGL/"
+  },
+  {
+    "title": "Buck's Quest",
+    "description": "A puzzle game where players solve challenges to progress through levels.",
+    "link": "https://encodedcoder.itch.io/bucks-quest",
+    "image": "/images/projects/gamedev/bucks-quest.png",
+    "technologies": ["Unity", "C#"],
+    "githubLink": "https://github.com/encodedCoder/bucks-quest-the-game",
+    "itchioLink": "https://encodedcoder.itch.io/bucks-quest",
+    "liveLink": "https://encodedcoder.github.io/bucks-quest-webGL/"
+  },
+  {
+    "title": "Mr. Mini",
+    "description": "An endless runner game where players control a character to avoid obstacles.",
+    "link": "https://encodedcoder.itch.io/mr-mini",
+    "image": "/images/projects/gamedev/mr-mini.png",
+    "technologies": ["Unity", "C#"],
+    "githubLink": "https://github.com/encodedCoder/mr-mini-the-game",
+    "itchioLink": "https://encodedcoder.itch.io/mr-mini",
+    "liveLink": "https://encodedcoder.github.io/mr-mini-webGL/"
+  }
+]

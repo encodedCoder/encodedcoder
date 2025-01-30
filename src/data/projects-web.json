@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Link Shortener",
+    "description": "A link shortener application that allows users to shorten long URLs for easier sharing and tracking.",
+    "link": "https://clipp.work",
+    "image": "/images/projects/webdev/link-shortener.png",
+    "technologies": ["React", "Node.js", "Express", "MongoDB"],
+    "githubLink": "https://github.com/encodedcoder/link-shortener",
+    "liveLink": "https://clipp.work"
+  },
+  {
+    "title": "Sorting Algorithm Visualizer",
+    "description": "A tool to visualize sorting algorithms, helping users understand how different algorithms work.",
+    "link": "https://vizsoft-sav.vercel.app/",
+    "image": "/images/projects/webdev/sorting-algorithm-visualizer.png",
+    "technologies": ["React", "D3.js"],
+    "githubLink": "https://github.com/encodedcoderIIT/sorting-algorithm-visualizer",
+    "liveLink": "https://vizsoft-sav.vercel.app/"
+  },
+  {
+    "title": "IIT Connect (WIP)",
+    "description": "A work-in-progress project for IIT connections, aiming to connect students and alumni.",
+    "link": "https://iitconnect.vercel.app/",
+    "image": "/images/projects/webdev/iit-connect.png",
+    "technologies": ["React", "Firebase"],
+    "githubLink": "https://github.com/encodedcoder/iitconnect",
+    "liveLink": "https://iitconnect.vercel.app/"
+  },
+  {
+    "title": "Calculator App",
+    "description": "A simple calculator application for basic arithmetic operations.",
+    "link": "https://calculator-suresh.vercel.app/",
+    "image": "/images/projects/webdev/calculator-app.png",
+    "technologies": ["React"],
+    "githubLink": "https://github.com/encodedcoder/calculator-app",
+    "liveLink": "https://calculator-suresh.vercel.app/"
+  },
+  {
+    "title": "Todo List",
+    "description": "A todo list application to help users manage their tasks efficiently.",
+    "link": "https://todo-suresh.vercel.app/",
+    "image": "/images/projects/webdev/todo-list.png",
+    "technologies": ["React", "Redux"],
+    "githubLink": "https://github.com/encodedcoder/todo-list",
+    "liveLink": "https://todo-suresh.vercel.app/"
+  }
+]

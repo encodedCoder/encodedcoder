@@ -1,8 +1,10 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import ProjectCard from "../components/ProjectCard";
-import projectsData from "../data/projects.json";
+import ProjectCardWeb from "../components/ProjectCardWeb";
+import ProjectCardGame from "../components/ProjectCardGame";
+import projectsDataWeb from "../data/projects-web.json";
+import projectsDataGame from "../data/projects-games.json";
 
 const Projects = () => {
   return (
@@ -24,8 +26,8 @@ const Projects = () => {
             Web Development Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-            {projectsData.webDevelopment.map((project, index) => (
-              <ProjectCard
+            {projectsDataWeb.map((project, index) => (
+              <ProjectCardWeb
                 key={index}
                 title={project.title}
                 description={project.description}
@@ -40,14 +42,15 @@ const Projects = () => {
             Unity Game Development Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {projectsData.unityGameDevelopment.map((project, index) => (
-              <ProjectCard
+            {projectsDataGame.map((project, index) => (
+              <ProjectCardGame
                 key={index}
                 title={project.title}
                 description={project.description}
                 image={project.image}
                 technologies={project.technologies}
                 githubLink={project.githubLink}
+                itchioLink={project.itchioLink}
                 liveLink={project.liveLink}
               />
             ))}
