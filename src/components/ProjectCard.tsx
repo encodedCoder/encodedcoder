@@ -20,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   liveLink,
 }) => {
   return (
-    <div className="border rounded-lg overflow-hidden shadow-md transform transition-transform duration-300 hover:shadow-2xl ">
+    <div className="border rounded-lg overflow-hidden shadow-md transform transition-transform duration-300 hover:shadow-2xl text-black">
       <Image
         src={image}
         alt={`${title} - ${description}`}
@@ -28,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         layout="responsive"
         width={700}
         height={475}
-        className="w-full h-48 object-cover"
+        className="w-full object-cover"
       />
       <div className="p-4">
         <h3 className="text-xl font-bold mb-2">{title}</h3>
