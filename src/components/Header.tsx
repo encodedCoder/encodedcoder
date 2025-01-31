@@ -32,8 +32,11 @@ const Header = () => {
           <Link href="/portfolio" className="nav-link">
             Portfolio
           </Link>
-          <Link href="/projects" className="nav-link">
-            Projects
+          <Link href="/web-dev" className="nav-link">
+            WebDev
+          </Link>
+          <Link href="/game-dev" className="nav-link">
+            GameDev
           </Link>
           {config.showBlog && (
             <Link href="/blog" className="nav-link">
@@ -78,8 +81,11 @@ const Header = () => {
             <Link href="/portfolio" className="nav-link" onClick={toggleMenu}>
               Portfolio
             </Link>
-            <Link href="/projects" className="nav-link" onClick={toggleMenu}>
-              Projects
+            <Link href="/web-dev" className="nav-link" onClick={toggleMenu}>
+              WebDev
+            </Link>
+            <Link href="/game-dev" className="nav-link" onClick={toggleMenu}>
+              GameDev
             </Link>
             {config.showBlog && (
               <Link href="/blog" className="nav-link" onClick={toggleMenu}>
