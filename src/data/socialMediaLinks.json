@@ -70,5 +70,11 @@
     "url": "https://www.youtube.com/@encodedcoder",
     "username": "encodedcoder",
     "logo": "/images/social-platforms/youtube-logo.png"
+  },
+  {
+    "platform": "Stack Overflow",
+    "url": "https://stackoverflow.com/users/15739349/encodedcoder",
+    "username": "encodedcoder",
+    "logo": "/images/social-platforms/stackoverflow-logo.png"
   }
 ]
