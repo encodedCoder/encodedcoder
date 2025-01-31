@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <div>
       <Head>
-        <title>Projects - Suresh</title>
+        <title>projects · Suresh</title>
         <meta
           name="description"
           content="Explore the projects by EncodedCoder."

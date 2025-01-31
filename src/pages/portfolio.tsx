@@ -42,7 +42,7 @@ const Portfolio = () => {
   return (
     <div>
       <Head>
-        <title>Portfolio - Suresh</title>
+        <title>portfolio · Suresh</title>
         <meta
           name="description"
           content="Read the latest blogs by EncodedCoder."
