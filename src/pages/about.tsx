@@ -16,7 +16,7 @@ const About = () => {
       </Head>
       <Header />
       <main className="flex items-center justify-center min-h-screen bg-gray-100">
-        <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl">
+        <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-5xl">
           <h1 className="text-4xl font-bold mb-6 text-center text-gray-800">
             About Me
           </h1>

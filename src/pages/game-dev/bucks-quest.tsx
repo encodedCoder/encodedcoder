@@ -12,7 +12,7 @@ const BucksQuest = () => {
       </Head>
       <Header />
       <main className="flex items-center justify-center min-h-screen bg-gray-100">
-        <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-6xl">
+        <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-5xl">
           <h1 className="text-4xl font-bold mb-6 text-center text-black">
             Buck&apos;s Quest
           </h1>
@@ -54,51 +54,52 @@ const BucksQuest = () => {
               <p className="text-lg text-gray-700 leading-relaxed">
                 Stunning animations bring the characters and environment to
                 life, providing an immersive experience.
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {[
-                    {
-                      title: "Idle",
-                      src: "https://img.itch.zone/aW1nLzE5NDg3MDIzLmdpZg==/original/awWtfW.gif",
-                    },
-                    {
-                      title: "Walk",
-                      src: "https://img.itch.zone/aW1nLzE5NDg3MDI2LmdpZg==/original/awWtfZ.gif",
-                    },
-                    {
-                      title: "Run",
-                      src: "https://img.itch.zone/aW1nLzE5NDg3MDI3LmdpZg==/original/awWtfA.gif",
-                    },
-                    {
-                      title: "Jump",
-                      src: "https://img.itch.zone/aW1nLzE5NDg3MDI4LmdpZg==/original/awWtfB.gif",
-                    },
-                    {
-                      title: "Push",
-                      src: "https://img.itch.zone/aW1nLzE5NDg3MDI0LmdpZg==/original/awWtfX.gif",
-                    },
-                    {
-                      title: "Pull",
-                      src: "https://img.itch.zone/aW1nLzE5NDg3MDI1LmdpZg==/original/awWtfY.gif",
-                    },
-                  ].map((animation) => (
-                    <div
-                      key={animation.title}
-                      className="p-4 rounded-lg shadow-md"
-                    >
-                      <h3 className="text-xl font-bold mb-2 text-black">
-                        {animation.title}
-                      </h3>
-                      <Image
-                        src={animation.src}
-                        alt={`${animation.title} Animation`}
-                        title={`${animation.title} Animation`}
-                        width={300}
-                        height={200}
-                      />
-                    </div>
-                  ))}
-                </div>
               </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  {
+                    title: "Idle",
+                    src: "https://img.itch.zone/aW1nLzE5NDg3MDIzLmdpZg==/original/awWtfW.gif",
+                  },
+                  {
+                    title: "Walk",
+                    src: "https://img.itch.zone/aW1nLzE5NDg3MDI2LmdpZg==/original/awWtfZ.gif",
+                  },
+                  {
+                    title: "Run",
+                    src: "https://img.itch.zone/aW1nLzE5NDg3MDI3LmdpZg==/original/awWtfA.gif",
+                  },
+                  {
+                    title: "Jump",
+                    src: "https://img.itch.zone/aW1nLzE5NDg3MDI4LmdpZg==/original/awWtfB.gif",
+                  },
+                  {
+                    title: "Push",
+                    src: "https://img.itch.zone/aW1nLzE5NDg3MDI0LmdpZg==/original/awWtfX.gif",
+                  },
+                  {
+                    title: "Pull",
+                    src: "https://img.itch.zone/aW1nLzE5NDg3MDI1LmdpZg==/original/awWtfY.gif",
+                  },
+                ].map((animation) => (
+                  <div
+                    key={animation.title}
+                    className="p-4 rounded-lg shadow-md"
+                  >
+                    <h3 className="text-xl font-bold mb-2 text-black">
+                      {animation.title}
+                    </h3>
+                    <Image
+                      src={animation.src}
+                      alt={`${animation.title} Animation`}
+                      title={`${animation.title} Animation`}
+                      width={300}
+                      height={200}
+                      unoptimized
+                    />
+                  </div>
+                ))}
+              </div>
             </section>
             <section className="mb-8">
               <h2 className="text-2xl font-bold mb-4 text-left text-black">

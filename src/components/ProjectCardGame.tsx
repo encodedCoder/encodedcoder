@@ -10,6 +10,7 @@ interface ProjectCardGameProps {
   githubLink: string;
   itchioLink: string;
   liveLink: string;
+  projectPage: string;
 }
 
 const ProjectCardGame: React.FC<ProjectCardGameProps> = ({
@@ -20,6 +21,7 @@ const ProjectCardGame: React.FC<ProjectCardGameProps> = ({
   githubLink,
   itchioLink,
   liveLink,
+  projectPage,
 }) => {
   return (
     <div className="border rounded-lg overflow-hidden shadow-md transform transition-transform duration-300 hover:shadow-2xl text-black">
@@ -45,6 +47,16 @@ const ProjectCardGame: React.FC<ProjectCardGameProps> = ({
             </li>
           ))}
         </ul>
+        <div className="pb-4 text-blue-600">
+          <a
+            href={projectPage}
+            rel="noopener noreferrer"
+            // className="bg-gray-800 text-white px-2 py-2 rounded-lg flex items-center"
+          >
+            {/* <FaGithub className="mr-2" /> */}
+            Explore...➡️➡️➡️
+          </a>
+        </div>
         <div className="flex justify-between">
           <a
             href={githubLink}
@@ -61,7 +73,7 @@ const ProjectCardGame: React.FC<ProjectCardGameProps> = ({
             rel="noopener noreferrer"
             className="bg-red-600 text-white px-2 py-2 rounded-lg flex items-center"
           >
-            <span className="mr-2">🎮</span>
+            <span className="mr-1">🎮</span>
             Itch.io
           </a>
           <a

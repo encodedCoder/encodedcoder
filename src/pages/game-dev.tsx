@@ -32,6 +32,7 @@ const Projects = () => {
                 githubLink={project.githubLink}
                 itchioLink={project.itchioLink}
                 liveLink={project.liveLink}
+                projectPage={project.projectPage}
               />
             ))}
           </div>

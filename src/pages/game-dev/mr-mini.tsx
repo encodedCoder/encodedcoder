@@ -12,7 +12,7 @@ const MrMini = () => {
       </Head>
       <Header />
       <main className="flex items-center justify-center min-h-screen bg-gray-100">
-        <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-6xl">
+        <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-5xl">
           <h1 className="text-4xl font-bold mb-6 text-center text-black">
             Mr. Mini
           </h1>
@@ -24,6 +24,7 @@ const MrMini = () => {
                 title="Mr. Mini"
                 width={128}
                 height={128}
+                unoptimized
               />
             </div>
           </div>
@@ -83,6 +84,7 @@ const MrMini = () => {
                       title={`${animation.title} Animation`}
                       width={300}
                       height={200}
+                      unoptimized
                     />
                   </div>
                 ))}

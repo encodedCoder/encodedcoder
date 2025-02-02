@@ -2,7 +2,13 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ["img.itch.zone"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "img.itch.zone",
+        pathname: "/**",
+      },
+    ],
   },
 };
 
