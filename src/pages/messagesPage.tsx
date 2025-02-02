@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FaTrash } from "react-icons/fa";
 import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -36,6 +37,29 @@ const MessagesPage = () => {
     fetchMessages();
   }, []);
 
+  const handleDelete = (id: string) => {
+    // Add your delete logic here, e.g., make an API call to delete the message from the database
+    const deleteMessage = async (id: string) => {
+      try {
+        const res = await fetch(`/api/messages/${id}`, {
+          method: "DELETE",
+        });
+        if (res.ok) {
+          setMessages((prevMessages) =>
+            prevMessages.filter((msg) => msg._id !== id)
+          );
+        } else {
+          console.error("Failed to delete message");
+        }
+      } catch (error) {
+        console.error("Error deleting message:", error);
+      }
+    };
+
+    deleteMessage(id);
+    console.log(`Delete message with id: ${id}`);
+  };
+
   return (
     <div>
       <Head>
@@ -48,9 +72,9 @@ const MessagesPage = () => {
       <Header />
 
       <main className="flex items-center justify-center min-h-screen bg-gray-100">
-        <div className="flex flex-col items-center space-y-4 pb-6 w-full px-4 md:px-0">
-          <div className="flex text-left">
-            <span className="text-2xl font-bold text-black display-inline">
+        <div className="flex flex-col items-center space-y-4 w-full px-4 md:px-0">
+          <div className="flex text-left pt-8">
+            <span className="text-2xl font-bold text-black display-inline py">
               Messages
             </span>
             <span className="text-xl text-black py-1">: {messages.length}</span>
@@ -61,60 +85,7 @@ const MessagesPage = () => {
               <p className="text-center text-black">Loading...</p>
             ) : (
               <>
-                {/* Table for desktop devices */}
-                <div className="hidden md:block">
-                  <table className="min-w-full divide-y divide-gray-200">
-                    <thead className="bg-gray-50">
-                      <tr>
-                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                          Name
-                        </th>
-                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                          Email
-                        </th>
-                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                          Message
-                        </th>
-                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                          Date and Time
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody className="bg-white divide-y divide-gray-200">
-                      {messages.map((msg) => (
-                        <tr key={msg._id}>
-                          <td
-                            className="px-6 py-4 whitespace-nowrap text-black"
-                            title={msg.name}
-                          >
-                            {msg.name}
-                          </td>
-                          <td
-                            className="px-6 py-4 whitespace-nowrap text-black"
-                            title={msg.email}
-                          >
-                            {msg.email}
-                          </td>
-                          <td
-                            className="px-6 py-4 text-black"
-                            title={msg.message}
-                          >
-                            {msg.message}
-                          </td>
-                          <td
-                            className="px-6 py-4 whitespace-nowrap text-black"
-                            title={new Date(msg.createdAt).toLocaleString()}
-                          >
-                            {new Date(msg.createdAt).toLocaleString()}
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-
-                {/* Cards for mobile devices */}
-                <div className="block md:hidden">
+                <div className="">
                   {messages.map((msg) => (
                     <div
                       key={msg._id}
@@ -129,7 +100,12 @@ const MessagesPage = () => {
                       <div className="text-sm text-gray-500">Email</div>
                       <div className="text-black mb-2">{msg.email}</div>
                       <div className="text-sm text-gray-500">Message</div>
-                      <div className="text-black">{msg.message}</div>
+                      <div className="text-black mb-2">{msg.message}</div>
+                      <div className="text-right">
+                        <button onClick={() => handleDelete(msg._id)}>
+                          <FaTrash className="text-red-500" />
+                        </button>
+                      </div>
                     </div>
                   ))}
                 </div>
