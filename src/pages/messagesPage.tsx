@@ -37,28 +37,26 @@ const MessagesPage = () => {
     fetchMessages();
   }, []);
 
-  const handleDelete = (id: string) => {
-    // Add your delete logic here, e.g., make an API call to delete the message from the database
-    const deleteMessage = async (id: string) => {
-      try {
-        const res = await fetch(`/api/messages/${id}`, {
-          method: "DELETE",
-        });
-        if (res.ok) {
-          setMessages((prevMessages) =>
-            prevMessages.filter((msg) => msg._id !== id)
-          );
-        } else {
-          console.error("Failed to delete message");
-        }
-      } catch (error) {
-        console.error("Error deleting message:", error);
+  const handleDelete = async (id: string) => {
+    try {
+      const res = await fetch(`/api/messages?id=${id}`, {
+        method: "DELETE",
+      });
+      if (res.ok) {
+        setMessages((prevMessages) =>
+          prevMessages.filter((msg) => msg._id !== id)
+        );
+      } else {
+        console.error("Failed to delete message");
       }
-    };
-
-    deleteMessage(id);
-    console.log(`Delete message with id: ${id}`);
+    } catch (error) {
+      console.error("Error deleting message:", error);
+    }
   };
+
+  if (loading) {
+    return <p className="text-center text-black">Loading...</p>;
+  }
 
   return (
     <div>
@@ -71,45 +69,49 @@ const MessagesPage = () => {
       </Head>
       <Header />
 
-      <main className="flex items-center justify-center min-h-screen bg-gray-100">
+      <main className="flex items-center justify-center min-h-screen my bg-gray-100">
         <div className="flex flex-col items-center space-y-4 w-full px-4 md:px-0">
-          <div className="flex text-left pt-8">
-            <span className="text-2xl font-bold text-black display-inline py">
-              Messages
-            </span>
-            <span className="text-xl text-black py-1">: {messages.length}</span>
-          </div>
+          {messages.length > 0 && (
+            <div className="w-full flex flex-col md:flex-row justify-between space-y-2 md:space-y-0 md:space-x-4">
+              <div className="text-2xl md:text-4xl font-bold text-black pl-2">
+                Messages
+              </div>
+              <div className="text-xl md:text-2xl text-black pr-2">
+                Count: {messages.length}
+              </div>
+            </div>
+          )}
 
           <div className="bg-white p-4 md:p-8 rounded-lg shadow-md w-full max-w-4xl hover:shadow-xl transition duration-300">
-            {loading ? (
-              <p className="text-center text-black">Loading...</p>
+            {messages.length === 0 ? (
+              <div className="text-center text-black py-10">
+                No messages yet 🥲
+              </div>
             ) : (
-              <>
-                <div className="">
-                  {messages.map((msg) => (
-                    <div
-                      key={msg._id}
-                      className="bg-white p-4 mb-4 rounded-lg shadow-md"
-                    >
-                      <div className="text-sm text-gray-500">Date and Time</div>
-                      <div className="text-black mb-2">
-                        {new Date(msg.createdAt).toLocaleString()}
-                      </div>
-                      <div className="text-sm text-gray-500">Name</div>
-                      <div className="text-black mb-2">{msg.name}</div>
-                      <div className="text-sm text-gray-500">Email</div>
-                      <div className="text-black mb-2">{msg.email}</div>
-                      <div className="text-sm text-gray-500">Message</div>
-                      <div className="text-black mb-2">{msg.message}</div>
-                      <div className="text-right">
-                        <button onClick={() => handleDelete(msg._id)}>
-                          <FaTrash className="text-red-500" />
-                        </button>
-                      </div>
+              <div className="">
+                {messages.map((msg) => (
+                  <div
+                    key={msg._id}
+                    className="bg-white p-4 mb-4 rounded-lg shadow-md"
+                  >
+                    <div className="text-sm text-gray-500">Date and Time</div>
+                    <div className="text-black mb-2">
+                      {new Date(msg.createdAt).toLocaleString()}
                     </div>
-                  ))}
-                </div>
-              </>
+                    <div className="text-sm text-gray-500">Name</div>
+                    <div className="text-black mb-2">{msg.name}</div>
+                    <div className="text-sm text-gray-500">Email</div>
+                    <div className="text-black mb-2">{msg.email}</div>
+                    <div className="text-sm text-gray-500">Message</div>
+                    <div className="text-black mb-2">{msg.message}</div>
+                    <div className="text-right">
+                      <button onClick={() => handleDelete(msg._id)}>
+                        <FaTrash className="text-red-500" />
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
             )}
           </div>
         </div>
