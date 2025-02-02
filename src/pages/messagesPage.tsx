@@ -70,14 +70,13 @@ const MessagesPage = () => {
       <Header />
 
       <main className="flex items-center justify-center min-h-screen my bg-gray-100">
-        <div className="flex flex-col items-center space-y-4 w-full px-4 md:px-0">
+        <div className="flex flex-col items-center w-full  space-y-6">
           {messages.length > 0 && (
-            <div className="w-full flex flex-col md:flex-row justify-between space-y-2 md:space-y-0 md:space-x-4">
-              <div className="text-2xl md:text-4xl font-bold text-black pl-2">
-                Messages
-              </div>
-              <div className="text-xl md:text-2xl text-black pr-2">
-                Count: {messages.length}
+            <div className="flex">
+              <div className="text-2xl font-bold text-black">Messages: </div>
+              <div className="text-xl text-black pt-1 px-2">
+                {" "}
+                {messages.length}
               </div>
             </div>
           )}
