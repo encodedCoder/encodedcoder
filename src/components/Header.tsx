@@ -11,10 +11,10 @@ const Header = () => {
   };
 
   return (
-    <header className="header">
+    <header className="header fixed top-0 w-full z-50">
       <nav className="container mx-auto flex justify-between items-center p-4 content-width">
         <div>
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center main-link">
             <Image
               src="/favicon.ico"
               alt="favicon"

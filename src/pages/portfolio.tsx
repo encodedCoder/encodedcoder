@@ -4,7 +4,7 @@ import { Code2, Terminal, Globe } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import portfolioProjects from "../data/portfolioProjects.json";
-import styles from "../styles/portfolio.module.css"; // Import the CSS module
+import styles from "./portfolio.module.css"; // Import the CSS module
 // import SocialIcons from "@/components/SocialIcons";
 
 const Portfolio = () => {

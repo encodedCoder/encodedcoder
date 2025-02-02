@@ -44,3 +44,35 @@
     background-color: #ccc;
   }
 }
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  left: 50%;
+  background: currentColor;
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.main-link {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.main-link:hover {
+  color: #d5d5d5; /* Change to your desired color */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

@@ -48,6 +48,12 @@
     "image": "/images/webskills/nextjs.png"
   },
   {
+    "technology": "Vercel",
+    "proficiency": "⭐⭐⭐⭐",
+    "concepts": ["Deployment", "Serverless Functions", "Edge Network"],
+    "image": "/images/webskills/vercel.png"
+  },
+  {
     "technology": "MongoDB",
     "proficiency": "⭐⭐⭐⭐",
     "concepts": ["CRUD Operations", "Aggregation", "Indexing"],
