@@ -76,5 +76,11 @@
     "url": "https://stackoverflow.com/users/15739349/encodedcoder",
     "username": "encodedcoder",
     "logo": "/images/social-platforms/stackoverflow-logo.png"
+  },
+  {
+    "platform": "Duolingo",
+    "url": "https://www.duolingo.com/profile/encodedcoder",
+    "username": "encodedcoder",
+    "logo": "/images/social-platforms/duolingo-logo.png"
   }
 ]
