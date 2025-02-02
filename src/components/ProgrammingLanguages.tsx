@@ -23,8 +23,8 @@ const ProgrammingLanguages = () => {
               className="mb-4"
             />
             <div className="font-bold text-xl mb-2">{language.language}</div>
-            <div className="mb-2">Proficiency: {language.proficiency}</div>
-            <div className="mb-2">Concepts: {language.concepts.join(", ")}</div>
+            <div className="mb-2">{language.proficiency}</div>
+            <div className="mb-2">{language.concepts.join(", ")}</div>
             <div>
               <a
                 href={language.githubRepo}

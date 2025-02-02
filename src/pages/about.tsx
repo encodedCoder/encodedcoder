@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 // import AnimatedCoder from "../components/AnimatedCoder";
-import SocialMediaLinks from "../components/SocialMediaLinks";
+// import SocialMediaLinks from "../components/SocialMediaLinks";
 import ProgrammingLanguages from "../components/ProgrammingLanguages";
 import WebDevSkills from "../components/WebDevSkills";
 import GameDevSkills from "@/components/GameDevSkills";
@@ -21,15 +21,15 @@ const About = () => {
             About Me
           </h1>
           {/* <AnimatedCoder /> */}
-          <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-            I am a web developer with experience in game development, writing
-            Python scripts, and solving LeetCode problems. I am passionate about
-            technology and love to learn new things.
+          <p className="text-lg mb-6 text-gray-700 leading-relaxed text-center">
+            I am a web developer 🌐 with experience in game development 🎮,
+            writing Python scripts 🐍, and solving LeetCode problems 🧑‍💻. I am
+            passionate about technology ⚙️ and love to learn new things 👻.
           </p>
           <ProgrammingLanguages />
           <WebDevSkills />
           <GameDevSkills />
-          <SocialMediaLinks />
+          {/* <SocialMediaLinks /> */}
         </div>
       </main>
       <Footer />
