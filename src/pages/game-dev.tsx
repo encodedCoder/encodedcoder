@@ -19,7 +19,7 @@ const Projects = () => {
       <main className="flex items-center justify-center min-h-screen bg-gray-100">
         <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-5xl">
           <h1 className="text-4xl font-bold mb-6 text-center text-black">
-            Unity Game Development Projects
+            Unity Game Development
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {projectsDataGame.map((project, index) => (

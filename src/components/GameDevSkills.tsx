@@ -30,11 +30,7 @@ const GameDevSkills = () => {
             />
             <h3 className="text-xl font-semibold mb-2">{skill.technology}</h3>
             <p className="mb-2">{skill.proficiency}</p>
-            <ul className="list-disc list-inside">
-              {skill.concepts.map((concept, index) => (
-                <li key={index}>{concept}</li>
-              ))}
-            </ul>
+            <div className="mb-2">{skill.concepts.join(", ")}</div>
           </div>
         ))}
       </div>

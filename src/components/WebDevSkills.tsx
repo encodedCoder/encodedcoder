@@ -29,8 +29,8 @@ const WebDevSkills = () => {
               className="mb-4"
             />
             <div className="font-bold text-xl mb-2">{skill.technology}</div>
-            <div className="mb-2">Proficiency: {skill.proficiency}</div>
-            <div className="mb-2">Concepts: {skill.concepts.join(", ")}</div>
+            <div className="mb-2">{skill.proficiency}</div>
+            <div className="mb-2">{skill.concepts.join(", ")}</div>
           </div>
         ))}
       </div>
