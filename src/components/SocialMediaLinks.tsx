@@ -5,7 +5,7 @@ import socialMediaLinks from "../data/socialMediaLinks.json";
 const SocialMediaLinks = () => {
   return (
     <div className="mt-8">
-      <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+      <h2 className="text-2xl font-semibold mb-4 text-gray-800 text-center">
         Connect with me on Social Media
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
