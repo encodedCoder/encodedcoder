@@ -4,7 +4,7 @@
     "description": "A link shortener application that allows users to shorten long URLs for easier sharing and tracking.",
     "link": "https://clipp.work",
     "image": "/images/projects/webdev/link-shortener.png",
-    "technologies": ["React", "Node.js", "Express", "MongoDB"],
+    "technologies": ["Node.js", "Express", "MongoDB"],
     "githubLink": "https://github.com/encodedcoder/link-shortener",
     "liveLink": "https://clipp.work"
   },
@@ -22,7 +22,7 @@
     "description": "A work-in-progress project for IIT connections, aiming to connect students and alumni.",
     "link": "https://iitconnect.vercel.app/",
     "image": "/images/projects/webdev/iit-connect.png",
-    "technologies": ["React", "Firebase"],
+    "technologies": ["Next", "Firebase"],
     "githubLink": "https://github.com/encodedcoder/iitconnect",
     "liveLink": "https://iitconnect.vercel.app/"
   },
@@ -40,7 +40,7 @@
     "description": "A todo list application to help users manage their tasks efficiently.",
     "link": "https://todo-suresh.vercel.app/",
     "image": "/images/projects/webdev/todo-list.png",
-    "technologies": ["React", "Redux"],
+    "technologies": ["React"],
     "githubLink": "https://github.com/encodedcoder/todo-list",
     "liveLink": "https://todo-suresh.vercel.app/"
   }
