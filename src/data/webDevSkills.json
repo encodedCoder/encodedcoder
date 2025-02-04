@@ -60,6 +60,12 @@
     "image": "/images/webskills/mongodb.png"
   },
   {
+    "technology": "SQL",
+    "proficiency": "⭐⭐⭐⭐",
+    "concepts": ["Queries", "Joins", "Transactions"],
+    "image": "/images/webskills/sql.png"
+  },
+  {
     "technology": "VS Code",
     "proficiency": "⭐⭐⭐⭐",
     "concepts": ["Code Editing", "Debugging", "Extensions"],
