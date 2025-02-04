@@ -46,17 +46,5 @@
     "proficiency": "⭐⭐⭐⭐",
     "concepts": ["Code Editing", "Debugging", "Extensions"],
     "image": "/images/gameskills/visualstudio.png"
-  },
-  {
-    "technology": "VS Code",
-    "proficiency": "⭐⭐⭐⭐",
-    "concepts": ["Code Editing", "Debugging", "Extensions"],
-    "image": "/images/gameskills/vscode.png"
-  },
-  {
-    "technology": "Sublime Text",
-    "proficiency": "⭐⭐⭐",
-    "concepts": ["Code Editing", "Syntax Highlighting", "Plugins"],
-    "image": "/images/gameskills/sublime.png"
   }
 ]

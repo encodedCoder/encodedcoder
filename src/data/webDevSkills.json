@@ -58,5 +58,29 @@
     "proficiency": "⭐⭐⭐⭐",
     "concepts": ["CRUD Operations", "Aggregation", "Indexing"],
     "image": "/images/webskills/mongodb.png"
+  },
+  {
+    "technology": "VS Code",
+    "proficiency": "⭐⭐⭐⭐",
+    "concepts": ["Code Editing", "Debugging", "Extensions"],
+    "image": "/images/webskills/vscode.png"
+  },
+  {
+    "technology": "Sublime Text",
+    "proficiency": "⭐⭐⭐",
+    "concepts": ["Code Editing", "Syntax Highlighting", "Plugins"],
+    "image": "/images/webskills/sublime.png"
+  },
+  {
+    "technology": "Vim",
+    "proficiency": "⭐⭐⭐",
+    "concepts": ["Text Editing", "Customization", "Shortcuts"],
+    "image": "/images/webskills/vim.png"
+  },
+  {
+    "technology": "Git",
+    "proficiency": "⭐⭐⭐⭐⭐",
+    "concepts": ["Version Control", "Branching", "Merging"],
+    "image": "/images/webskills/git.png"
   }
 ]
