@@ -82,6 +82,7 @@ const Portfolio = () => {
                 </p>
                 <a
                   href={project.link}
+                  target="_blank"
                   className="mt-4 inline-block text-blue-600 hover:underline"
                 >
                   View Project →
@@ -170,6 +171,7 @@ const Portfolio = () => {
             <div className="stats-card">
               <a
                 href={stats.leetcode.profile}
+                target="_blank"
                 className="text-blue-600 hover:underline"
               >
                 View Profile →
