@@ -24,6 +24,12 @@
     "image": "/images/webskills/bootstrap.png"
   },
   {
+    "technology": "JavaScript",
+    "proficiency": "⭐⭐⭐⭐⭐",
+    "concepts": ["ES6+", "DOM Manipulation", "Async/Await"],
+    "image": "/images/webskills/javascript.png"
+  },
+  {
     "technology": "TypeScript",
     "proficiency": "⭐⭐⭐⭐",
     "concepts": ["Type Safety", "Generics", "Interfaces"],

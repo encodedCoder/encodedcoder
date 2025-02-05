@@ -4,8 +4,11 @@ import { Code2, Terminal, Globe } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import portfolioProjects from "../data/portfolioProjects.json";
+import webDevSkills from "../data/webDevSkills.json"; // Import the webDevSkills JSON file
+import gameDevSkills from "../data/gameDevSkills.json"; // Import the gameDevSkills JSON file
 import styles from "./portfolio.module.css"; // Import the CSS module
 // import SocialIcons from "@/components/SocialIcons";
+import Image from "next/image";
 
 const Portfolio = () => {
   const [stats, setStats] = useState({
@@ -83,6 +86,60 @@ const Portfolio = () => {
                 >
                   View Project →
                 </a>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* WebDevSkills Section */}
+        <section className="section-container">
+          <h2 className="text-2xl font-bold mb-8">WebDevSkills</h2>
+          <div className="grid grid-cols-3 md:grid-cols-10 gap-6">
+            {webDevSkills.map((skill) => (
+              <div
+                key={skill.technology}
+                className="skill-card relative group flex flex-col items-center cursor-pointer"
+              >
+                <Image
+                  width={80}
+                  height={80}
+                  src={skill.image}
+                  alt={skill.technology}
+                  className="transition-transform transform group-hover:scale-110"
+                />
+                {/* <div className="absolute z-10 bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 group-hover:opacity-100 transition-opacity bg-gray-800 text-white text-sm rounded px-2 py-1">
+                  {skill.concepts.join(", ")}
+                </div> */}
+                <div className="mt-2 text-center text-gray-900 dark:text-white">
+                  {skill.technology}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* GameDevSkills Section */}
+        <section className="section-container">
+          <h2 className="text-2xl font-bold mb-8">GameDevSkills</h2>
+          <div className="grid grid-cols-3 md:grid-cols-10 gap-6">
+            {gameDevSkills.map((skill) => (
+              <div
+                key={skill.technology}
+                className="skill-card relative group flex flex-col items-center cursor-pointer"
+              >
+                <Image
+                  width={80}
+                  height={80}
+                  src={skill.image}
+                  alt={skill.technology}
+                  className="transition-transform transform group-hover:scale-110"
+                />
+                {/* <div className="absolute z-10 bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 group-hover:opacity-100 transition-opacity bg-gray-800 text-white text-sm rounded px-2 py-1">
+                  {skill.concepts.join(", ")}
+                </div> */}
+                <div className="mt-2 text-center text-gray-900 dark:text-white">
+                  {skill.technology}
+                </div>
               </div>
             ))}
           </div>
