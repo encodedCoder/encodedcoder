@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaTrash } from "react-icons/fa";
+// import { FaTrash } from "react-icons/fa";
 import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
