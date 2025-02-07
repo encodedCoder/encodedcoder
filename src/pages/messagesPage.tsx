@@ -76,8 +76,8 @@ const MessagesPage = () => {
       </Head>
       <Header />
 
-      <main className="bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center min-h-screen my bg-gray-100">
-        <div className="flex flex-col items-center w-full space-y-6">
+      <main className="bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center min-h-screen">
+        <div className="flex flex-col items-center w-full space-y-6 py-8">
           {messages.length > 0 && (
             <div className="flex">
               <div className="text-2xl font-bold text-black">Messages: </div>
@@ -88,7 +88,7 @@ const MessagesPage = () => {
             </div>
           )}
 
-          <div className="bg-white bg-opacity-75 p-4 md:p-8 rounded-lg shadow-md w-full max-w-4xl hover:shadow-xl transition duration-300">
+          <div className="bg-white bg-opacity-75 md:p-8 md:rounded-lg shadow-md w-full max-w-4xl hover:shadow-xl transition duration-300">
             {messages.length === 0 ? (
               <div className="text-center text-black py-10">
                 No messages yet 🥲
