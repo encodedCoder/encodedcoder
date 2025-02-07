@@ -1,8 +1,16 @@
 <div align="center">
-<h1 align="center">Hi <img width="35" src="https://raw.githubusercontent.com/nixin72/nixin72/master/wave.gif"> 
-<br/>I'm encodedCoder · Suresh</h1>
-<h4 align="center"> Full Stack Web Developer... <a href="https://www.linkedin.com/in/encodedCoder/" target="_blank">connect with me</a> for more</h4>
+  <h1 align="center">
+    Hi <img width="35" src="https://raw.githubusercontent.com/nixin72/nixin72/master/wave.gif">
+    <br/>I'm encodedCoder · Suresh
+  </h1>
+  <h4 align="center"> 
+    Full Stack Web Developer... 
+    <a href="https://www.linkedin.com/in/encodedCoder/" target="_blank">
+      connect with me
+    </a> for more
+  </h4>
 </div>
+
 <div align="center">
 <picture>
   <source

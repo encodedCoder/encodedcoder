@@ -16,8 +16,8 @@ const Home = () => {
         />
       </Head>
       <Header />
-      <main className="flex items-center justify-center md:min-h-screen bg-gray-100">
-        <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl">
+      <main className="flex items-center justify-center md:min-h-screen bg-gradient-to-r from-blue-500 to-purple-600">
+        <div className="bg-white bg-opacity-75 p-8 rounded-lg shadow-lg w-full max-w-4xl">
           <EncodedCoder />
           <div className="flex justify-center mb-6">
             <div className="circling-logo">

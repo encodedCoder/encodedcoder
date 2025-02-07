@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SocialMediaLinks from "@/components/SocialMediaLinks";
+import Image from "next/image";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -65,19 +66,27 @@ const Contact = () => {
       </Head>
       <Header />
 
-      <main className="flex items-center justify-center md:min-h-screen bg-gray-100">
+      <main className="flex items-center justify-center md:min-h-screen bg-gradient-to-r from-blue-500 to-purple-600">
         <div className="flex flex-col items-center space-y-4 pb-6">
           <div className="text-black p-4 text-center">
             <h1 className="text-4xl font-bold mb-4 text-center text-black">
               Get in Touch
             </h1>
             <p className="max-w-sm mx-auto">
-              Reach out for web development projects, collaborations, or just to
-              say hi!!!
+              Reach out for web development projects 📂, collaborations 🫱🏼‍🫲🏾,
+              or just to say hi{" "}
+              <Image
+                width={20}
+                height={20}
+                src="https://raw.githubusercontent.com/nixin72/nixin72/master/wave.gif"
+                alt=""
+                className="inline"
+              />
+              !!!
             </p>
           </div>
 
-          <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md hover:shadow-xl transition duration-300">
+          <div className="bg-white bg-opacity-75 p-8 rounded-lg shadow-md w-full max-w-md hover:shadow-xl transition duration-300">
             <h1 className="text-4xl font-bold mb-4 text-center text-black">
               Contact
             </h1>
@@ -131,8 +140,8 @@ const Contact = () => {
           </div>
         </div>
       </main>
-      <div className="flex justify-center bg-gray-100 pb-8">
-        <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl">
+      <div className="flex justify-center bg-gray-100 pb-8 bg-gradient-to-r from-blue-500 to-purple-600">
+        <div className="bg-white bg-opacity-75 p-8 rounded-lg shadow-lg w-full max-w-4xl">
           <SocialMediaLinks />
         </div>
       </div>

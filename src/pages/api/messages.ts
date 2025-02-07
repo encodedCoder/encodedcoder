@@ -17,6 +17,8 @@ export default async function handler(
         .sort({ createdAt: -1 })
         .toArray();
 
+      console.log("Fetched messages:", messages); // Add logging
+
       res.status(200).json(messages);
     } catch (error) {
       console.error("Failed to load messages:", error);

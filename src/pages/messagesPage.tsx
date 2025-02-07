@@ -20,10 +20,17 @@ const MessagesPage = () => {
     const fetchMessages = async () => {
       try {
         const res = await fetch("/api/messages");
-        const data = await res.json();
-        if (Array.isArray(data)) {
-          setMessages(data);
+        const contentType = res.headers.get("content-type");
+        if (contentType && contentType.includes("application/json")) {
+          const data = await res.json();
+          console.log("Fetched messages:", data); // Add logging
+          if (Array.isArray(data)) {
+            setMessages(data);
+          } else {
+            setMessages([]);
+          }
         } else {
+          console.error("Received non-JSON response");
           setMessages([]);
         }
       } catch (error) {
@@ -69,8 +76,8 @@ const MessagesPage = () => {
       </Head>
       <Header />
 
-      <main className="flex items-center justify-center min-h-screen my bg-gray-100">
-        <div className="flex flex-col items-center w-full  space-y-6">
+      <main className="bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center min-h-screen my bg-gray-100">
+        <div className="flex flex-col items-center w-full space-y-6">
           {messages.length > 0 && (
             <div className="flex">
               <div className="text-2xl font-bold text-black">Messages: </div>
@@ -81,7 +88,7 @@ const MessagesPage = () => {
             </div>
           )}
 
-          <div className="bg-white p-4 md:p-8 rounded-lg shadow-md w-full max-w-4xl hover:shadow-xl transition duration-300">
+          <div className="bg-white bg-opacity-75 p-4 md:p-8 rounded-lg shadow-md w-full max-w-4xl hover:shadow-xl transition duration-300">
             {messages.length === 0 ? (
               <div className="text-center text-black py-10">
                 No messages yet 🥲
@@ -91,7 +98,7 @@ const MessagesPage = () => {
                 {messages.map((msg) => (
                   <div
                     key={msg._id}
-                    className="bg-white p-4 mb-4 rounded-lg shadow-md"
+                    className="bg-white bg-opacity-50 p-4 mb-4 rounded-lg shadow-md"
                   >
                     <div className="text-sm text-gray-500">Date and Time</div>
                     <div className="text-black mb-2">
