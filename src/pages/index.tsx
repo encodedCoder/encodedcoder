@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import DotFlashing from "../components/DotFlashing"; // Import the DotFlashing component
 import EncodedCoder from "../components/EncodedCoder";
 // import SocialIcons from "@/components/SocialIcons";
 const Home = () => {
@@ -31,9 +30,7 @@ const Home = () => {
               />
             </div>
           </div>
-          <div className="flex justify-center mt-6 mb-6">
-            <DotFlashing />
-          </div>
+          <div className="flex justify-center mt-6 mb-6"></div>
           <div style={{ textAlign: "center" }}>
             {/* <div className="mt-6 flex justify-center gap-4 color-gray-700">
               <SocialIcons />

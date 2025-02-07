@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import config from "../config";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,11 +37,6 @@ const Header = () => {
           <Link href="/game-dev" className="nav-link">
             GameDev
           </Link>
-          {config.showBlog && (
-            <Link href="/blog" className="nav-link">
-              Blog
-            </Link>
-          )}
           <Link href="/about" className="nav-link">
             About
           </Link>
@@ -87,11 +81,6 @@ const Header = () => {
             <Link href="/game-dev" className="nav-link" onClick={toggleMenu}>
               GameDev
             </Link>
-            {config.showBlog && (
-              <Link href="/blog" className="nav-link" onClick={toggleMenu}>
-                Blog
-              </Link>
-            )}
             <Link href="/about" className="nav-link" onClick={toggleMenu}>
               About
             </Link>
