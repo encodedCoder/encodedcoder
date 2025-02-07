@@ -112,7 +112,7 @@ const MessagesPage = () => {
                     <div className="text-black mb-2">{msg.message}</div>
                     <div className="text-right">
                       <button onClick={() => handleDelete(msg._id)}>
-                        <FaTrash className="text-red-500" />
+                        {/* <FaTrash className="text-red-500" /> */}
                       </button>
                     </div>
                   </div>
