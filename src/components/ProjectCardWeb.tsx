@@ -20,7 +20,7 @@ const ProjectCardWeb: React.FC<ProjectCardWebProps> = ({
   liveLink,
 }) => {
   return (
-    <div className="border rounded-lg overflow-hidden shadow-md transform transition-transform duration-300 hover:shadow-2xl text-black">
+    <div className="border rounded-lg overflow-hidden shadow-md transform transition-transform duration-300 hover:shadow-2xl text-black bg-black bg-opacity-20">
       <Image
         src={image}
         alt={`${title} - ${description}`}

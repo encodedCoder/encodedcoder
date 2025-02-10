@@ -43,5 +43,15 @@
     "technologies": ["React"],
     "githubLink": "https://github.com/encodedcoder/todo-list",
     "liveLink": "https://todo-suresh.vercel.app/"
+  },
+  {
+    "title": "SYNTACS '25",
+    "description": "SYmposium on Novel Technologies and Advances in Computer Science",
+    "link": "https://syntacs2025.site",
+    "image": "/images/projects/webdev/syntacs.png",
+    "technologies": ["React", "NextJs", "Tailwind"],
+    "githubLink": "https://github.com/encodedcoderIIT/syntacs-2025",
+    "liveLink": "https://syntacs2025.site",
+    "alternateLink": "https://syntacs2025.vercel.app"
   }
 ]
